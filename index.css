@@ -1,0 +1,161 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    img, object, embed, video, iframe,
+    max-width: 100%;
+    height: auto;
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #2d4ce8; /* Cor do fundo do app */
+    background-repeat: no-repeat; /* Não repetir o fundo */
+}
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 { /* Chamada para modificar textos .h1 */
+    font-size:24px; /* Tamanho da fonte */
+    font-weight:normal; /* Peso da fonte */
+    margin:0px;  /* Margem da fonte */
+    overflow:visible; /* Transbordar da fonte */
+    padding:0px; /* Modifica preenchimento da imagem */
+    text-align:center; /* Alinhamento do texto */
+}
+
+
+.app{
+    width: 100%; /* app responsivo */
+}
+
+
+.logo{ /* Chamada da imagem do logo do html para css */
+    margin-top: 0%; /* Modifica a altura da imagem */
+    width: 100%;  /* Modifica a largura da imagem */
+    height: 100px;  /* Modifica a altura da imagem */
+    top:auto;  /* Modifica a altura */
+    background: url("../img/logo.png") center center/300px no-repeat; /*Link para puxar a imagem da pasta */
+}
+
+
+.foto{  /* Chamada da imagem da barra vermelha do html para css */
+    margin-top:-95px;  /* Modifica a altura */
+    width:100%; /* Modifica a largura da imagem */
+    height:100px; /* Modifica a altura da imagem */
+    background: url("../img/wwwww.png") center center/700px no-repeat; /*Link para puxar a imagem da pasta */
+}
+
+
+#campo1 { /* Chamada do select do campus do html para css */
+    background: url("../img/Capturar.PNG")center center/210px 30px no-repeat; /*Link para puxar a imagem da pasta */
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    position: auto; /*Deixa a posição automatica */
+    top: 35%; /* Y */  /* Modifica a altura */
+    padding: 4px 10px 10px 10px; /* Modifica  preenchimento da imagem */
+    left: auto; /* X */  /* Deixa a posição automatica */
+    width: 210px;  /* Modifica a largura da imagem */
+    height: auto; /* Modifica a altura da imagem */
+}
+#campo2 { /* Chamada do select do Curso do html para css */
+    background: url("../img/Capturar.PNG")center center/210px 30px no-repeat;
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    position: auto;  /*Deixa a posição automatica */
+    top: 42%; /* Y */   /* Modifica a altura */
+    left: auto; /* X */ /* Modifica dimensões da imagem */
+    padding: 4px 10px 10px 10px;  /* Modifica  preenchimento da imagem */
+    width: 210px; /* Modifica a largura da imagem */
+    height: auto; /* Modifica a altura da imagem */
+
+}
+#campo3 { /* Chamada do select do Período do html para css */
+    background: url("../img/Capturar.PNG")center center/210px 30px no-repeat; /*Link para puxar a imagem da pasta */
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    position: auto;  /*Deixa a posição automatica */
+    top: 49%; /* Y */   /* Modifica a altura */
+    left: auto; /* X */ /* Modifica dimensões da imagem */
+    padding: 4px 10px 10px 10px; /* Modifica  preenchimento da imagem */
+    width: 210px; /* Modifica a largura da imagem */
+    height: auto; /* Modifica a altura da imagem */
+}
+
+
+
+
+input[type='number'] { /* Chamada da seleção do semestre do html para css */
+
+  align-items: center; /*Deixa o item alinhado ao centro do app */
+  border-bottom: 1px solid #D5DCE6; /* Alteração da borda */
+  background: url("../img/input.PNG")center center/210px 30px no-repeat; /*Link para puxar a imagem da pasta */
+  border-radius: 5px; /* Tamanho da borda */
+  font-size: 20px; /* Tamanho da fonte */
+  position: auto; /*Deixa a posição automatica */
+  top: 49%; /* Y */ /* Modifica a altura */
+  left: auto; /* X */ /* Modifica dimensões da imagem */
+  padding: 1px 3px 5px 5px; /* Modifica  preenchimento da imagem */
+  width: 200px; /* Modifica a largura da imagem */
+  height: auto; /* Modifica a altura da imagem */
+
+    
+}    
+
+#resposta{ /* Chamada do campo de resposta do html para css */
+    
+      align-items: center; /*Deixa o item alinhado ao centro do app */
+      border-bottom: 1px solid #D5DCE6; /* Alteração da borda */
+      background: url("../img/res.PNG")center center/160px 35px no-repeat; /*Link para puxar a imagem da pasta */
+      border-radius: 5px; /* Tamanho da borda */
+      font-size: 20px; /* Tamanho da fonte */
+      position: auto; /*Deixa a posição automatica */
+      top: 49%; /* Y */ /* Modifica a altura */
+      left: auto; /* X */ /* Modifica dimensões da imagem */
+      padding: 30px 3px 5px 5px; /* Modifica dimensões da imagem */
+      width: 150px; /* Modifica a largura da imagem */
+      height: auto; /* Modifica a altura da imagem */
+    
+        
+    }    
+
+    #cls{ /* Chamada do campo de limpar do html para css */
+        width: 43px; /* Modifica a largura da imagem */
+        border-radius: 1000px; /* Tamanho da borda */
+        height: 43px; /* Modifica a altura da imagem */
+        margin-top: -1%; /* Modifica a altura */
+        border-bottom-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+        border-left-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+        border-top-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+        border-right-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+        background: url("../img/limpa.png") center center/ 67px no-repeat; /*Link para puxar a imagem da pasta */
+
+    }
+
+
+
+
+
+
+.localizar { /* Chamada do botão de procurar do html para css */
+    width: 43px; /* Modifica a largura da imagem */
+    border-radius: 1000px; /* Tamanho da borda */
+    height: 43px; /* Modifica a altura da imagem */
+    margin-top: -3%; /* Modifica a altura */
+    border-bottom-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+    border-left-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+    border-top-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+    border-right-color: #2d4ce8; /* Modifica  a cor da borda do botão */
+    background: url("../img/lupa.png") center center/ 50px no-repeat; /*Link para puxar a imagem da pasta */
+}
+.foto2{
+    background: url("../img/"); /*Link para puxar a imagem da pasta */
+}
