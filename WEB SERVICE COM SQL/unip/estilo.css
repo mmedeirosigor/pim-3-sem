@@ -1,0 +1,160 @@
+body{
+	font-family: 'Cabin', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+main{
+	margin-top: 50px;
+}
+#cabeca{
+	border-right: 2px solid #444;
+	width: 200px;
+	height: 630px;
+	padding: 6px;
+}
+
+#cabeca ul li{
+	list-style-type: none;
+	margin-bottom: 20px;
+	width: 120px;
+	float: left;
+	position: relative;
+	top: 10px;
+	left: 2px;
+}
+#cabeca ul img{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#se{
+	background-color: #d7dce2;
+	padding-left: 20px;
+	padding-top: 8px;
+	margin-bottom: 4px;
+	width: 180px;
+	position: relative;
+	right: 38px;
+}
+#se a:hover{
+	cursor:pointer;
+	color: orange;
+}
+#nse{
+	background-color: #e7eef6;
+	padding-left: 30px;
+	padding-top: 8px;
+	margin-bottom: 4px;
+	width: 180px;
+	position: relative;
+	right: 50px;
+}
+#nse a:hover{
+	cursor:pointer;
+	color: orange;
+}
+#nse1{
+	background-color: #e7eef6;
+	padding-left: 20px;
+	padding-top: 8px;
+	margin-bottom: 4px;
+	width: 180px;
+	position: relative;
+	right: 40px;
+}
+#nse1 a:hover{
+	cursor:pointer;
+	color:orange;
+}
+#nse2{
+	background-color: #e7eef6;
+	padding-left: 20px;
+	padding-top: 8px;
+	margin-bottom: 4px;
+	width: 180px;
+	position: relative;
+	right: 40px;
+}
+#nse2 a:hover{
+	cursor:pointer;
+	color: orange;
+}
+
+main{
+	position: absolute;
+	top: 10px;
+	left: 300px;
+}
+
+#sub{
+	position: absolute;
+	height: 90%;
+	width: 102%;
+	opacity: 0.1;
+	color: #e7eef6;
+	background: url("none");
+}
+#sub:hover{
+	cursor:pointer;
+}
+#img-sub{
+	position: absolute;
+}
+#btn-sub{
+	position: relative;
+	top: 30px;
+	left: 100px;
+	height: 60px;
+	width: 55px; 
+}
+#box-curso{
+	min-width: 100px;
+	width: 700px;
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
+#box-semestre{
+	min-width: 100px;
+	width: 700px;
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
+#box-periodo{
+	min-width: 100px;
+	width: 700px;
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
+#box-sala{
+	min-width: 100px;
+	width: 700px;
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
+#btn-sair{
+	position: absolute;
+	right: 20px;
+	margin: 10px;
+	z-index: 1000;
+}
+#btn-sair a:hover{
+	color: red ;
+}
+
+#logo_down{
+	position: relative;
+	top: 150px;
+}
+#curso-btn-mostrar{
+	min-width: 100px;
+	width: 700px;
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
+#info{
+	background-color: #d7dce2;
+	border-radius: 6px;
+	padding: 20px;
+}

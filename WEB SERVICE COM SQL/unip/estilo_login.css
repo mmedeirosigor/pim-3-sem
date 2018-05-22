@@ -1,0 +1,25 @@
+body{
+	font-family: 'Cabin', sans-serif;
+}
+#form{
+	width: 240px;
+}
+
+#wrong{
+	color: red;
+}
+#btn-login{
+	border-radius: 5px;
+	padding: 3px 9px 3px 9px;
+}
+#btn-login:hover{
+	cursor:pointer;
+}
+#box-nick{
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
+#box-pass{
+	border: 2px solid #C2C8CF;
+	border-radius: 3px;
+}
