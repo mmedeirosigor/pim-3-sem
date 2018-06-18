@@ -1,0 +1,79 @@
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        final Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+        List<String> curso = new ArrayList<>(Arrays.asList("Analise e desenv de sistemas",
+                "Pedagogia", "Psicologia"));
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, curso);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner1.setAdapter(dataAdapter);
+
+        final Spinner spinner2 = (Spinner) findViewById(R.id.spinner3 );
+        List<String> periodo = new ArrayList<>(Arrays.asList("manhã", "tarde", "noite"));
+
+        ArrayAdapter<String> dataAdapter3 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, periodo);
+        dataAdapter3.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner2.setAdapter(dataAdapter3);
+
+
+        final Spinner spinner3 = (Spinner) findViewById(R.id.spinner2);
+        List<String> semestre = new ArrayList<>(Arrays.asList("1","2","3","4","5","6","7","8","9","10"));
+
+        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, semestre);
+        dataAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner3.setAdapter(dataAdapter2);
+
+
+
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String ValordoSpinner = spinner1.getSelectedItem().toString();
+                String ValordoSpinner2 = spinner2.getSelectedItem().toString();
+                String ValordoSpinner3 = spinner3.getSelectedItem().toString();
+                if (ValordoSpinner.equals("Analise e desenv de sistemas") && ValordoSpinner2.equals("manhã") && ValordoSpinner3.equals("1")) {
+                    setContentView(R.layout.activity_main2);
+                } else if (ValordoSpinner.equals("Analise e desenv de sistemas") && ValordoSpinner2.equals("manhã") && ValordoSpinner3.equals("2") || ValordoSpinner3.equals("3")) {
+                    setContentView(R.layout.activity_main3);
+                } else if (ValordoSpinner.equals("Pedagogia") && ValordoSpinner2.equals("manhã") && ValordoSpinner3.equals("1")) {
+                    setContentView(R.layout.activity_main4);
+                } else if (ValordoSpinner.equals("Pedagogia") && ValordoSpinner2.equals("manhã") && ValordoSpinner3.equals("5")) {
+                    setContentView(R.layout.activity_main5);
+                } else if (ValordoSpinner.equals("Psicologia ") && ValordoSpinner2.equals("manhã") && ValordoSpinner3.equals("5")) {
+                    setContentView(R.layout.activity_main6);
+                }else {
+                    setContentView(R.layout.activity_main7);
+                }
+
+            }
+        });
+
+
+
+
+        }
+    }
+
